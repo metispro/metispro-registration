@@ -75,6 +75,7 @@ public class HelloWorldTest
         assertEquals(Response.Status.OK.getStatusCode(), r.getStatus());
         String value = IOUtils.toString((InputStream) r.getEntity());
         assertEquals(echo, value);
+        System.out.println(value);
     }
 
     @Test
